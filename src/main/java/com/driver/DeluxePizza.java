@@ -6,7 +6,6 @@ public class DeluxePizza extends Pizza {
         super(isVeg);
         super.addExtraCheese();
         super.addExtraToppings();
-        super.addTakeaway();
     }
 
     @Override
@@ -21,6 +20,6 @@ public class DeluxePizza extends Pizza {
 
     @Override
     public void addTakeaway() {
-        //super.addTakeaway();
+        super.addTakeaway();
     }
 }
