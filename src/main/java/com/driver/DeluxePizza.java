@@ -3,23 +3,11 @@ package com.driver;
 public class DeluxePizza extends Pizza {
 
     public DeluxePizza(Boolean isVeg) {
-        super(isVeg);
-        super.addExtraCheese();
-        super.addExtraToppings();
-    }
+        super(isVeg);// calling constructor of parent class
 
-    @Override
-    public void addExtraCheese() {
-        //super.addExtraCheese();
-    }
-
-    @Override
-    public void addExtraToppings() {
-        //super.addExtraToppings();
-    }
-
-    @Override
-    public void addTakeaway() {
-        super.addTakeaway();
+        //calling methods of pizza class -> since it has been inherited by DeluxePizza class
+        //as deluxe pizza has cheese & toppings added already
+        addExtraCheese();
+        addExtraToppings();
     }
 }
